@@ -27,7 +27,7 @@ const lightColor = (element, number) => {
     }, number - 250);
     setTimeout(() => {
         element.classList.remove("selected");
-    });
+    }, number);
 };
 //checar se os botões clicados são os mesmos da ordem do jogo
 let checkOrder = () => {
@@ -44,10 +44,8 @@ let checkOrder = () => {
 };
 //clique do usuario
 let click = (color) => {
-    console.log(color);
     clickedOrder[clickedOrder.length] = color;
     createColorElement(color).classList.add("selected");
-
     setTimeout(() => {
         createColorElement(color).classList.remove("selected");
         checkOrder();
@@ -83,11 +81,6 @@ let playGame = () => {
     score = 0;
     nextLevel();
 };
-// green.addEventListener("click", click(0));
-// red.addEventListener("click", click(1));
-// yellow.addEventListener("click", click(2));
-// blue.addEventListener("click", click(3));
-
 green.onclick = () => click(0);
 red.onclick = () => click(1);
 yellow.onclick = () => click(2);
