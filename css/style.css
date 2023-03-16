@@ -1,10 +1,14 @@
-:root{
+:root {
     --white: #ffffff;
     --turquoise: #d0ffef;
+    --blue: #0000ff;
+    --red: #ff0000;
+    --yellow: #ffff00;
+    --green: #008000;
 }
 body {
     margin: 0;
-    background-color: var(--turquoise)
+    background-color: var(--turquoise);
 }
 
 .main-game {
@@ -16,11 +20,37 @@ body {
 }
 .genius {
     display: grid;
-    grid-template-areas: " green red " "yellow blue";
+    grid-template-areas: "verde vermelho " "amarelo azul";
     grid-gap: 10px;
     border: solid 1px var(--white);
     background-color: var(--white);
     border-radius: 50%;
     width: 700px;
     height: 700px;
+}
+
+.blue {
+    grid-area: azul;
+    background-color: var(--blue);
+    border-bottom-right-radius: 100%;
+}
+
+.red {
+    grid-area: vermelho;
+    background-color: var(--red);
+    border-top-right-radius: 100%;
+}
+.yellow{
+    grid-area: amarelo;
+    background-color: var(--yellow);
+    border-bottom-left-radius: 100%;
+}
+.green{
+    grid-area: verde;
+    background-color: var(--green);
+    border-top-left-radius: 100%;
+}
+
+.selected{
+    opacity: 0.5;
 }
