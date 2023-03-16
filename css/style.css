@@ -1,5 +1,5 @@
 :root {
-    --white: #ffffff;
+    --black: #000000;
     --turquoise: #d0ffef;
     --blue: #0000ff;
     --red: #ff0000;
@@ -21,9 +21,9 @@ body {
 .genius {
     display: grid;
     grid-template-areas: "verde vermelho " "amarelo azul";
-    grid-gap: 10px;
-    border: solid 1px var(--white);
-    background-color: var(--white);
+    grid-gap: 30px;
+    border: solid 1px var(--black);
+    background-color: var(--black);
     border-radius: 50%;
     width: 700px;
     height: 700px;
