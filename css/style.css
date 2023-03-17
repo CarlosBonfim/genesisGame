@@ -18,6 +18,14 @@ body {
     justify-content: center;
     align-items: center;
 }
+.main-game:before{
+    content: " ";
+    width: 25vw;
+    height: 35vh;
+    position: absolute;
+    background-color: var(--black);
+    border-radius: 50%;
+}
 .genius {
     display: grid;
     grid-template-areas: "verde vermelho " "amarelo azul";
